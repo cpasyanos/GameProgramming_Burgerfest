@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 23486909689143096}
   - component: {fileID: 54560105897922878}
   m_Layer: 0
-  m_Name: bottle 1
+  m_Name: ketchup bottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

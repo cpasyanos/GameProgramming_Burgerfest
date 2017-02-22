@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 23156277056056712}
   - component: {fileID: 54136582396334038}
   m_Layer: 0
-  m_Name: bottle
+  m_Name: mustard bottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
