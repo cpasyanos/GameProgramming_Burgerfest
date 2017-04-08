@@ -4,8 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreManager : UnitySingleton<ScoreManager> {
+    public GameObject TimeLoseGameobject;
+
     [Tooltip("The starting time in seconds for the game timer.")]
     public int MAX_TIME_VALUE =  100;
+    [Tooltip("The time lost each time you drop something on the floor.")]
+    public int TIME_LOST_AMOUNT = 5;
 
     [Tooltip("The text that will show the game timer.")]
     public Text timerText;
@@ -16,9 +20,17 @@ public class ScoreManager : UnitySingleton<ScoreManager> {
         private set
         {
             timer = value;
+            if (timer < 0)
+            {
+                timer = 0;
+            }
             if (timerText != null)
             {
                 timerText.text = "Time: " + timer.ToString();
+            }
+            if (timer == 0)
+            {
+                GameOver();
             }
         }
     }
@@ -40,6 +52,10 @@ public class ScoreManager : UnitySingleton<ScoreManager> {
                 scoreText.text = "Score: " + score.ToString();
             }
         }
+    }
+    private void GameOver()
+    {
+        //lol idk
     }
 
     private void Reset()
@@ -63,9 +79,10 @@ public class ScoreManager : UnitySingleton<ScoreManager> {
         }
     }
 
-    public void LosePoints(int pointsToLose)
+    public void LoseTime()
     {
-        Score -= pointsToLose;
+        Timer -= TIME_LOST_AMOUNT;
+        TimeLoseGameobject.SetActive(true);
     }
 
     public void GainPoints(int pointsToGain)
