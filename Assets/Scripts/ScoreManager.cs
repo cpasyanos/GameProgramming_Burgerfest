@@ -82,6 +82,8 @@ public class ScoreManager : UnitySingleton<ScoreManager> {
     public void LoseTime()
     {
         Timer -= TIME_LOST_AMOUNT;
+        // stop then start the timer effect
+        TimeLoseGameobject.SetActive(false);
         TimeLoseGameobject.SetActive(true);
     }
 
