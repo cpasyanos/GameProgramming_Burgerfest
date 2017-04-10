@@ -19,7 +19,7 @@ public class Burger : MonoBehaviour {
         ResetBurger();
         GenerateBurger();
         UpdateBurgerImages();
-        Debug.Log(ToString());
+        //Debug.Log(ToString());
     }
 
     public void ResetBurger()

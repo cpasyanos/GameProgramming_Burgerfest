@@ -13,7 +13,7 @@ public class LoseTimeWhenOnFloor : MonoBehaviour {
 
     private void LoseTimeAndDie()
     {
-        Debug.Log("cheese death");
+        //Debug.Log("death comes for us all");
         ScoreManager.Instance.LoseTime();
         Destroy(gameObject);
     }
