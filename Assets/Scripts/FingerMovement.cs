@@ -3,37 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FingerMovement : MonoBehaviour {
+   private bool isGrabbing;
+
+   void Start()
+   {
+      isGrabbing = false;
+   }
 	
 	// Update is called once per frame
 	void Update () {
-      // pinky
-		if (Input.GetKeyDown(KeyCode.A))
+     if (Input.GetMouseButtonDown(0))
       {
-         Debug.Log("Clench pinky");
+         isGrabbing = true;
+         Debug.Log("Grabbing.");
       }
 
-      // ring finger
-      if (Input.GetKeyDown(KeyCode.W))
+     if (Input.GetMouseButtonUp(0))
       {
-
-      }
-
-      // middle finger
-      if (Input.GetKeyDown(KeyCode.E))
-      {
-
-      }
-
-      // index finger
-      if (Input.GetKeyDown(KeyCode.R))
-      {
-
-      }
-
-      // thumb
-      if (Input.GetKeyDown(KeyCode.Space))
-      {
-
+         isGrabbing = false;
+         Debug.Log("Stopped grabbing.");
       }
 	}
 }
