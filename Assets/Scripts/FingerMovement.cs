@@ -12,13 +12,13 @@ public class FingerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-     if (Input.GetMouseButtonDown(0))
+     if (Input.GetKeyDown(KeyCode.Space))
       {
          isGrabbing = true;
          Debug.Log("Grabbing.");
       }
 
-     if (Input.GetMouseButtonUp(0))
+     if (Input.GetKeyUp(KeyCode.Space))
       {
          isGrabbing = false;
          Debug.Log("Stopped grabbing.");
