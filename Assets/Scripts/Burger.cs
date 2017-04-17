@@ -1,46 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
-public class Burger : MonoBehaviour {
+public class Burger
+{
     // the number of elements in a burger
     [Range(3, 15)]
     public const int numIngredients = 5;
-    public enum fillings { BOTTOM_BUN, TOP_BUN, PATTY, LETTUCE, TOMATO, CHEESE, KETCHUP, MUSTARD };
-    private fillings[] ingredients = new fillings[numIngredients];
-    public Sprite[] burgerImageAssets = new Sprite[8];
-    public Image[] burgerImageObjects = new Image[numIngredients];
+    public enum fillings { BOTTOM_BUN, TOP_BUN, PATTY, LETTUCE, TOMATO, CHEESE, KETCHUP, MUSTARD, PICKLE };
+    public fillings[] ingredients = new fillings[numIngredients];
 
-    private System.Random pseudoRand = new System.Random();
-
-    public void InitBurger()
+    public Burger(System.Random pseudoRand)
     {
-        ResetBurger();
-        GenerateBurger();
-        UpdateBurgerImages();
-        //Debug.Log(ToString());
+        InitBurger(pseudoRand);
     }
 
+    public void InitBurger(System.Random pseudoRand)
+    {
+        ResetBurger();
+        GenerateBurger(pseudoRand);
+    }
     public void ResetBurger()
     {
         ingredients = new fillings[numIngredients];
-        for (int i = 0; i < numIngredients; i++)
-        {
-            burgerImageObjects[i].sprite = null;
-        }
     }
-
-    void OnEnable () {
-        InitBurger();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    private void GenerateBurger()
+    public void GenerateBurger(System.Random pseudoRand)
     {
         ingredients[0] = fillings.BOTTOM_BUN;
         ingredients[numIngredients - 1] = fillings.TOP_BUN;
@@ -75,17 +57,6 @@ public class Burger : MonoBehaviour {
             }
         }
     }
-
-    private void UpdateBurgerImages()
-    {
-        for (int i = 0; i < numIngredients; i++)
-        {
-            // set the sprites of the gameojbects to the sprites corresponding to the ingredients
-            int fillType = (int)ingredients[i];
-            burgerImageObjects[i].sprite = burgerImageAssets[fillType];
-        }
-    }
-
     public override string ToString()
     {
         string built = "";
