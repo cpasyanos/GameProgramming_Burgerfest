@@ -14,7 +14,7 @@ public class ScoreZone : MonoBehaviour
     [Tooltip("The parent object that keeps track of what's on this plate")]
     public Scorer scorer;
 
-    public void OnTiggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Ingredient")
         {
@@ -25,7 +25,7 @@ public class ScoreZone : MonoBehaviour
             scorer.AddScore(scoreAmount);
         }
     }
-    public void OnTiggerExit(Collider other)
+    public void OnTriggerExit(Collider other)
     {
         if (other.tag == "Ingredient")
         {
