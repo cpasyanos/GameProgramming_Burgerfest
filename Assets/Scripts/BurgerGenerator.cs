@@ -8,7 +8,7 @@ using UnityEngine.UI;
 /// generates and manages new burger order gameobjects
 /// uses an archetype for gameobject pool
 /// </summary>
-public class BurgerGenerator : MonoBehaviour
+public class BurgerGenerator : UnitySingleton<BurgerGenerator>
 {
     public GameObject OrderPrefab;
     public int maxOrders = 5;
@@ -27,11 +27,37 @@ public class BurgerGenerator : MonoBehaviour
 
 
     // Use this for initialization
-    void Start()
+    private void Start()
     {
         myTransform = this.gameObject.transform;
         initGameObjectPool();
+        StartCoroutine(burgerGeneratorTimer());
     }
+
+
+    /// <summary>
+    /// checks if there's an order that matches what was served on the plate. if so, remove it from the list of active orders.
+    /// </summary>
+    public bool TryRemoveMatchingBurger(Dictionary<Burger.fillings, int> ingredientHistogram)
+    {
+        bool ret = false;
+        Burger match = null;
+        for (int i = 0; i < Used.Keys.Count(); i++)
+        {
+            if (Used.Keys.ElementAt(i).HistogramEquals(ingredientHistogram))
+            {
+                ret = true;
+                match = Used.Keys.ElementAt(i);
+                break;
+            }
+        }
+        if (match != null)
+        {
+            ReturnOrderToUnused(match);
+        }
+        return ret;
+    }
+
 
     private void initGameObjectPool()
     {
@@ -41,6 +67,9 @@ public class BurgerGenerator : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// generates new burgers if needed
+    /// </summary>
     private void AddCapacity()
     {
         Burger burger = new Burger(pseudoRand);
@@ -50,6 +79,9 @@ public class BurgerGenerator : MonoBehaviour
         Unused.Add(burger, order);
     }
 
+    /// <summary>
+    /// grabs the next object from the unused collection and generates a new order from it
+    /// </summary>
     private void GenerateNewOrder()
     {
         if (Unused.Count == 0)
@@ -66,11 +98,28 @@ public class BurgerGenerator : MonoBehaviour
         poppedObject.Value.SetActive(true);
     }
 
-    public void Update()
+    /// <summary>
+    /// resets the order and puts it back to the unused collection
+    /// </summary>
+    private void ReturnOrderToUnused(Burger usedOrder)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        GameObject returnedObject;
+        if (!Used.TryGetValue(usedOrder, out returnedObject))
+        {
+            Debug.LogError("removing order that wasn't in the used pool!");
+            return;
+        }
+        Used.Remove(usedOrder);
+        returnedObject.SetActive(false);
+        Unused.Add(usedOrder, returnedObject);
+    }
+
+    private IEnumerator burgerGeneratorTimer()
+    {
+        while(true)
         {
             GenerateNewOrder();
+            yield return new WaitForSeconds(10);
         }
     }
 }

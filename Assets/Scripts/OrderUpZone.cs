@@ -12,12 +12,8 @@ public class OrderUpZone : MonoBehaviour {
         if (other.tag == "Plate")
         {
             Scorer scorer = other.GetComponent<Scorer>();
-            // get the ingredients
-            // compare them with the current orders
-            // if it's good, add the score
-            bool isGood = false;
             // display a message
-            if (isGood)
+            if (scorer.ClearPlateAndScore())
             {
                 StartCoroutine(GoodMessage());
             }
@@ -25,8 +21,6 @@ public class OrderUpZone : MonoBehaviour {
             {
                 StartCoroutine(BadMessage());
             }
-            // clear the plate and then reset it
-            scorer.ClearPlate();
         }
     }
 

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Burger
 {
@@ -94,4 +96,32 @@ public class Burger
         }
         return built;
     }
+
+    public Dictionary<fillings, int> ToHistogram()
+    {
+        var result = new Dictionary<fillings, int>();
+        foreach (Burger.fillings filling in Enum.GetValues(typeof(Burger.fillings)))
+        {
+            result.Add(filling, 0);
+        }
+        for (int i = 0; i < numIngredients; i++)
+        {
+            result[ingredients[i]] += 1;
+        }
+        return result;
+    }
+
+    public bool HistogramEquals(Dictionary<fillings, int> other)
+    {
+        var myHistogram = ToHistogram();
+        foreach (Burger.fillings filling in Enum.GetValues(typeof(Burger.fillings)))
+        {
+            if (other[filling] != myHistogram[filling])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }

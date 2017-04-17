@@ -11,6 +11,16 @@ public class Scorer : MonoBehaviour
     private Rigidbody myRigidbody;
     private Dictionary<Burger.fillings, int> ingredientHistogram = new Dictionary<Burger.fillings, int>();
 
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log(ClearPlateAndScore());
+        }
+    }
+
+
     private void Reset()
     {
         ingredientHistogram.Clear();
@@ -62,18 +72,38 @@ public class Scorer : MonoBehaviour
         score -= scoreAmount;
     }
 
-    public void ClearPlate()
+    /// <summary>
+    /// clears the plate data structure, launches into space, and tries to score if the order was good
+    /// </summary>
+    /// <returns>whether the player earned points</returns>
+    public bool ClearPlateAndScore()
     {
-        Debug.Log("Bombs Away!");
+        bool ret = CheckAndScore();
+        Reset();
+        Launch();
+        StartCoroutine(WaitToResetPosition());
+        return ret;
+    }
+
+    private void Launch()
+    {
         myRigidbody.AddTorque(new Vector3(-20, 15, 0), ForceMode.Impulse);
         myRigidbody.AddForce(new Vector3(-20, 15, 0), ForceMode.Impulse);
-        StartCoroutine(WaitToResetPosition());
+    }
+
+    private bool CheckAndScore()
+    {
+        if (BurgerGenerator.Instance.TryRemoveMatchingBurger(ingredientHistogram))
+        {
+            ScoreManager.Instance.GainPoints(score);
+            return true;
+        }
+        return false;
     }
 
     private IEnumerator WaitToResetPosition()
     {
         yield return new WaitForSeconds(3);
-        Reset();
         ResetPosition();
     }
 
