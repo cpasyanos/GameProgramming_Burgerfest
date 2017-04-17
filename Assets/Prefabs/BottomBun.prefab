@@ -821,7 +821,7 @@ GameObject:
   - component: {fileID: 65435147533050116}
   m_Layer: 0
   m_Name: BottomBun
-  m_TagString: Untagged
+  m_TagString: BottomBun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1624,7 +1624,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1044960470421400}
-  m_LocalRotation: {x: 0.025032207, y: 0.67098606, z: 0.73340696, w: 0.106138885}
+  m_LocalRotation: {x: 0.025032204, y: 0.670986, z: 0.7334069, w: 0.10613887}
   m_LocalPosition: {x: 0.0041461843, y: 0.050000243, z: -0.00020826535}
   m_LocalScale: {x: 0.42190054, y: 0.30949515, z: 0.115253}
   m_Children:
