@@ -8,6 +8,10 @@ public class HandControl : MonoBehaviour
 
 	public float speed = 10.0f;
 	public float turnSpeed = 360.0f;
+    public float moveSpeed = 10000f;
+
+    public Camera FollowCam;
+    public Vector3 CameraOffset;
 
 	// Use this for initialization
 	void Start()
@@ -18,7 +22,13 @@ public class HandControl : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		var scrollVal = Input.GetAxis("Mouse ScrollWheel");
+        if (Input.GetAxis("Mouse X") != 0)
+        {
+            rigidbody.AddForce(new Vector3(Input.GetAxisRaw("Mouse Y") * Time.deltaTime * -1 * moveSpeed,
+                0.0f, Input.GetAxisRaw("Mouse X") * Time.deltaTime * moveSpeed));
+        }
+
+        var scrollVal = Input.GetAxis("Mouse ScrollWheel");
 
 		// Scroll down to lower hand
 		if (scrollVal < 0f)
@@ -33,11 +43,11 @@ public class HandControl : MonoBehaviour
 			Vector3 position = this.transform.position;
 			rigidbody.AddForce (0, position.y * 250, 0);
 		}
-
-		// Stops rigidbody movement if no scroll wheel input
-		rigidbody.velocity = Vector3.zero;
-		rigidbody.angularVelocity = Vector3.zero;
-
+        if (scrollVal == 0 && Input.GetAxis("Mouse X") == 0)
+        {// Stops rigidbody movement if no scroll wheel input
+            rigidbody.velocity = Vector3.zero;
+            rigidbody.angularVelocity = Vector3.zero;
+        }
 		// Press and hold left mouse button down to turn hand counterclockwise
 		if (Input.GetKey (KeyCode.Mouse0)) 
 		{
@@ -49,5 +59,7 @@ public class HandControl : MonoBehaviour
 		{
 			transform.Rotate(Vector3.left, turnSpeed * Time.deltaTime);
 		}
+
+        FollowCam.transform.position = this.transform.position + CameraOffset;
 	}
 }

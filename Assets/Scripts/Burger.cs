@@ -116,7 +116,7 @@ public class Burger
         var myHistogram = ToHistogram();
         foreach (Burger.fillings filling in Enum.GetValues(typeof(Burger.fillings)))
         {
-            if (other[filling] != myHistogram[filling])
+            if (other[filling] < myHistogram[filling])
             {
                 return false;
             }
