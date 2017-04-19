@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 54051499250652922}
   - component: {fileID: 64397232805355566}
   m_Layer: 0
-  m_Name: Plate
+  m_Name: ScoringPlate
   m_TagString: Plate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
