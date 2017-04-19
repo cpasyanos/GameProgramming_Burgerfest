@@ -89,7 +89,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -102,7 +102,207 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature_Hand_L|00
+      takeName: Armature_Hand_L|00
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_Hand_L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/forearm.L.003
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/forearm.L.003/forearm.L.003_end
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/finger_index.01.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/finger_index.01.L/finger_index.02.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/finger_index.01.L/finger_index.02.L/finger_index.03.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/finger_index.01.L/finger_index.02.L/finger_index.03.L/finger_index.03.L_end
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/thumb.01.L.001
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/thumb.01.L.001/thumb.01.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/thumb.01.L.001/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/thumb.01.L.001/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/thumb.01.L.001/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.02.L.001
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.02.L.001/palm.02.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.02.L.001/palm.02.L/finger_middle.01.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.02.L.001/palm.02.L/finger_middle.01.L/finger_middle.02.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.02.L.001/palm.02.L/finger_middle.01.L/finger_middle.02.L/finger_middle.03.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.02.L.001/palm.02.L/finger_middle.01.L/finger_middle.02.L/finger_middle.03.L/finger_middle.03.L_end
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.03.L.001
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.03.L.001/palm.03.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.03.L.001/palm.03.L/finger_ring.01.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.03.L.001/palm.03.L/finger_ring.01.L/finger_ring.02.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.03.L.001/palm.03.L/finger_ring.01.L/finger_ring.02.L/finger_ring.03.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.03.L.001/palm.03.L/finger_ring.01.L/finger_ring.02.L/finger_ring.03.L/finger_ring.03.L_end
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.04.L.001
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.04.L.001/palm.04.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.04.L.001/palm.04.L/finger_pinky.01.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.04.L.001/palm.04.L/finger_pinky.01.L/finger_pinky.02.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.04.L.001/palm.04.L/finger_pinky.01.L/finger_pinky.02.L/finger_pinky.03.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.04.L.001/palm.04.L/finger_pinky.01.L/finger_pinky.02.L/finger_pinky.03.L/finger_pinky.03.L_end
+        weight: 1
+      - path: Hand_L
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hand_L|00
+      takeName: Hand_L|00
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature_Hand_L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/forearm.L.003
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/forearm.L.003/forearm.L.003_end
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/finger_index.01.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/finger_index.01.L/finger_index.02.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/finger_index.01.L/finger_index.02.L/finger_index.03.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/finger_index.01.L/finger_index.02.L/finger_index.03.L/finger_index.03.L_end
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/thumb.01.L.001
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/thumb.01.L.001/thumb.01.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/thumb.01.L.001/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/thumb.01.L.001/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.01.L.001/palm.01.L/thumb.01.L.001/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.02.L.001
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.02.L.001/palm.02.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.02.L.001/palm.02.L/finger_middle.01.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.02.L.001/palm.02.L/finger_middle.01.L/finger_middle.02.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.02.L.001/palm.02.L/finger_middle.01.L/finger_middle.02.L/finger_middle.03.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.02.L.001/palm.02.L/finger_middle.01.L/finger_middle.02.L/finger_middle.03.L/finger_middle.03.L_end
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.03.L.001
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.03.L.001/palm.03.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.03.L.001/palm.03.L/finger_ring.01.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.03.L.001/palm.03.L/finger_ring.01.L/finger_ring.02.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.03.L.001/palm.03.L/finger_ring.01.L/finger_ring.02.L/finger_ring.03.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.03.L.001/palm.03.L/finger_ring.01.L/finger_ring.02.L/finger_ring.03.L/finger_ring.03.L_end
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.04.L.001
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.04.L.001/palm.04.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.04.L.001/palm.04.L/finger_pinky.01.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.04.L.001/palm.04.L/finger_pinky.01.L/finger_pinky.02.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.04.L.001/palm.04.L/finger_pinky.01.L/finger_pinky.02.L/finger_pinky.03.L
+        weight: 1
+      - path: Armature_Hand_L/forearm.L/hand.L/palm.04.L.001/palm.04.L/finger_pinky.01.L/finger_pinky.02.L/finger_pinky.03.L/finger_pinky.03.L_end
+        weight: 1
+      - path: Hand_L
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -128,6 +328,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -138,7 +339,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1

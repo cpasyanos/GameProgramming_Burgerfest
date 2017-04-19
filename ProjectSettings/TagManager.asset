@@ -8,6 +8,13 @@ TagManager:
   - Floor
   - Plate
   - Ingredient
+  - Pickles
+  - Cheese
+  - Lettuce
+  - Tomato
+  - TopBun
+  - BottomBun
+  - Patty
   layers:
   - Default
   - TransparentFX
