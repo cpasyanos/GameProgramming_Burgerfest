@@ -17,22 +17,23 @@ public class IngredientSpawner : MonoBehaviour
 		// Spawn
 		for (int i = 0; i < ingredientBox.Length; i++) 
 		{
-			if (ingredientPrefabs [i].CompareTag ("Pickles")) 
+			if (ingredientPrefabs [i].GetComponent<IngredientScript>().kind == Burger.fillings.PICKLE) 
 			{
 				SpawnIngredients (ingredientPrefabs [i], ingredientBox [i], 15, x - 0.25f, y, z - 0.2f, 0.0f, 0.12f);
 				SpawnIngredients (ingredientPrefabs [i], ingredientBox [i], 15, x, y, z - 0.2f, 0.0f, 0.12f);
 				SpawnIngredients (ingredientPrefabs [i], ingredientBox [i], 15, x + 0.25f, y, z - 0.2f, 0.0f, 0.12f);
-			} 
-			else if (ingredientPrefabs [i].CompareTag ("TopBun")) 
-			{
+			}
+            else if (ingredientPrefabs[i].GetComponent<IngredientScript>().kind == Burger.fillings.TOP_BUN)
+
+            {
 				SpawnIngredients (ingredientPrefabs [i], ingredientBox [i], 5, x, y + 0.25f, z + 1.25f, 0.25f, 0.0f);
 			}
-			else if (ingredientPrefabs [i].CompareTag ("BottomBun")) 
-			{
+            else if (ingredientPrefabs[i].GetComponent<IngredientScript>().kind == Burger.fillings.BOTTOM_BUN)
+            {
 				SpawnIngredients (ingredientPrefabs [i], ingredientBox [i], 5, x, y + 0.25f, z + 0.25f, 0.25f, 0.0f);
 			}
-			else if (ingredientPrefabs [i].CompareTag ("Patty")) 
-			{
+            else if (ingredientPrefabs[i].GetComponent<IngredientScript>().kind == Burger.fillings.PATTY)
+            {
 				SpawnIngredients (ingredientPrefabs [i], ingredientBox [i], 3, x - 0.5f, y + 0.25f, z + 0.75f, 0.25f, 0.0f);
 				SpawnIngredients (ingredientPrefabs [i], ingredientBox [i], 3, x + 0.25f, y + 0.25f, z + 0.3f, 0.25f, 0.0f);
 				SpawnIngredients (ingredientPrefabs [i], ingredientBox [i], 3, x + 0.25f, y + 0.25f, z + 1.2f, 0.25f, 0.0f);
