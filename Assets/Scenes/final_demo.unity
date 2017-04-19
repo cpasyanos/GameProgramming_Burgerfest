@@ -593,7 +593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 25
   turnSpeed: 100
-  moveSpeed: 10000
+  moveSpeed: 1000
   FollowCam: {fileID: 1083906116}
   CameraOffset: {x: 0, y: 4, z: 1.45}
 --- !u!65 &608097207

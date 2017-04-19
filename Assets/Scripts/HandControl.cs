@@ -16,6 +16,7 @@ public class HandControl : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
+        Cursor.lockState = CursorLockMode.Locked;
 		rigidbody = GetComponent<Rigidbody> ();
 	}
 
