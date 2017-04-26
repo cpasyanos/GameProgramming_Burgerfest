@@ -114,4 +114,9 @@ public class Scorer : MonoBehaviour
         myRigidbody.velocity = Vector3.zero;
         myRigidbody.angularVelocity = Vector3.zero;
     }
+
+   public string getScoreDisplay()
+   {
+      return "You scored " + score + " points";
+   }
 }
