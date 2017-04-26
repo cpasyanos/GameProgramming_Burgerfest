@@ -108,6 +108,12 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &14845445 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114326928552621702, guid: 93d93665b89ea8f4e8ffeee1dab224cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 924786386}
+  m_Script: {fileID: 11500000, guid: 2a96f1fe561ff3e4d94d8ec8c0c2351f, type: 3}
 --- !u!1 &156376090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,7 +1204,7 @@ Prefab:
     - target: {fileID: 224212614464472828, guid: ec469712b4b967e489d5debd7d98cd65,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224212614464472828, guid: ec469712b4b967e489d5debd7d98cd65,
         type: 2}
@@ -1208,7 +1214,7 @@ Prefab:
     - target: {fileID: 224212614464472828, guid: ec469712b4b967e489d5debd7d98cd65,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224716068669609894, guid: ec469712b4b967e489d5debd7d98cd65,
         type: 2}
@@ -1228,7 +1234,7 @@ Prefab:
     - target: {fileID: 224716068669609894, guid: ec469712b4b967e489d5debd7d98cd65,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224716068669609894, guid: ec469712b4b967e489d5debd7d98cd65,
         type: 2}
@@ -1238,7 +1244,7 @@ Prefab:
     - target: {fileID: 224716068669609894, guid: ec469712b4b967e489d5debd7d98cd65,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec469712b4b967e489d5debd7d98cd65, type: 2}
@@ -1654,6 +1660,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114408783453981380, guid: 152f9ff8162149b4f808c82dd549441f,
+        type: 2}
+      propertyPath: orderUpZone
+      value: 
+      objectReference: {fileID: 14845445}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 152f9ff8162149b4f808c82dd549441f, type: 2}
   m_IsPrefabParent: 0
