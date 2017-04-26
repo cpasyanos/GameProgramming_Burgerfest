@@ -820,6 +820,7 @@ GameObject:
   - component: {fileID: 54358541271225298}
   - component: {fileID: 65435147533050116}
   - component: {fileID: 114967605544189354}
+  - component: {fileID: 114151497230850444}
   m_Layer: 0
   m_Name: BottomBun
   m_TagString: Ingredient
@@ -2801,6 +2802,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33303831059621182
 MeshFilter:
@@ -2853,6 +2855,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114151497230850444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507034525414696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed6f6f442a255c4eb625f70df3572b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114967605544189354
 MonoBehaviour:
   m_ObjectHideFlags: 1

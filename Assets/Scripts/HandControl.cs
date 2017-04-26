@@ -35,14 +35,14 @@ public class HandControl : MonoBehaviour
 		if (scrollVal < 0f)
 		{
 			Vector3 position = this.transform.position;
-			rigidbody.AddForce (0, position.y * -250, 0);
+			rigidbody.AddForce (0, -250, 0);
 		}
 	
 		// Scroll up to lower hand
 		if (scrollVal > 0f)
 		{
 			Vector3 position = this.transform.position;
-			rigidbody.AddForce (0, position.y * 250, 0);
+			rigidbody.AddForce (0, 250, 0);
 		}
         if (scrollVal == 0 && Input.GetAxis("Mouse X") == 0)
         {// Stops rigidbody movement if no scroll wheel input
