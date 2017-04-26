@@ -12,18 +12,18 @@ public class Pickupper : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Ingredient")
+        if (other.tag == "Ingredient" || other.tag == "Plate")
         {
-            Debug.Log(string.Format("Touched ingredient {0}", other.name));
+            //Debug.Log(string.Format("Touched ingredient {0}", other.name));
             objectsToPickup.Add(other.gameObject);
         }
     }
 
     public void OnTriggerExit(Collider other)
     {
-            if (other.tag == "Ingredient")
+            if (other.tag == "Ingredient" || other.tag == "Plate")
             {
-                Debug.Log(string.Format("Stopped touching ingredient {0}", other.name));
+                //Debug.Log(string.Format("Stopped touching ingredient {0}", other.name));
                 objectsToPickup.Remove(other.gameObject);
             }
     }
