@@ -11,6 +11,8 @@ public class Scorer : MonoBehaviour
     private Rigidbody myRigidbody;
     private Dictionary<Burger.fillings, int> ingredientHistogram = new Dictionary<Burger.fillings, int>();
 
+    public OrderUpZone orderUpZone;
+
 
     private void Update()
     {
@@ -79,9 +81,17 @@ public class Scorer : MonoBehaviour
     public bool ClearPlateAndScore()
     {
         bool ret = CheckAndScore();
-        Reset();
+        score = 0;
         Launch();
         StartCoroutine(WaitToResetPosition());
+        if (ret)
+        {
+            orderUpZone.StartCoroutine(orderUpZone.GoodMessage());
+        }
+        else
+        {
+            orderUpZone.StartCoroutine(orderUpZone.BadMessage());
+        }
         return ret;
     }
 
