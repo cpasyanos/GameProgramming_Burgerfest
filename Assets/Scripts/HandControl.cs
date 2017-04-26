@@ -41,13 +41,13 @@ public class HandControl : MonoBehaviour
 		// Press and hold left mouse button down to turn hand counterclockwise
 		if (Input.GetKey (KeyCode.Mouse0)) 
 		{
-			transform.Rotate(Vector3.right, turnSpeed * Time.deltaTime);
+			transform.Rotate(Vector3.left, turnSpeed * Time.deltaTime);
 		}
 
 		// Press and hold right mouse button down to turn hand clockwise
 		if (Input.GetKey (KeyCode.Mouse1)) 
 		{
-			transform.Rotate(Vector3.left, turnSpeed * Time.deltaTime);
+			transform.Rotate(Vector3.right, turnSpeed * Time.deltaTime);
 		}
 	}
 }
