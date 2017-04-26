@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreManager : UnitySingleton<ScoreManager> {
     public GameObject TimeLoseGameobject;
+    public GameObject gameOverScreen;
 
     [Tooltip("The starting time in seconds for the game timer.")]
     public int MAX_TIME_VALUE =  100;
@@ -38,6 +39,7 @@ public class ScoreManager : UnitySingleton<ScoreManager> {
     [Tooltip("The text that will show the game score.")]
     public Text scoreText;
     private int score;
+    public Text finalText;
     public int Score
     {
         get
@@ -55,7 +57,9 @@ public class ScoreManager : UnitySingleton<ScoreManager> {
     }
     private void GameOver()
     {
-        //lol idk
+      //lol idk
+      displayScore();
+      gameOverScreen.SetActive(true);
     }
 
     private void Reset()
@@ -91,4 +95,9 @@ public class ScoreManager : UnitySingleton<ScoreManager> {
     {
         Score += pointsToGain;
     }
+
+   public void displayScore()
+   {
+      finalText.text = "Your final score was " + score.ToString();
+   }
 }

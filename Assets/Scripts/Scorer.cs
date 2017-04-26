@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Scorer : MonoBehaviour
 {
@@ -114,9 +115,4 @@ public class Scorer : MonoBehaviour
         myRigidbody.velocity = Vector3.zero;
         myRigidbody.angularVelocity = Vector3.zero;
     }
-
-   public string getScoreDisplay()
-   {
-      return "You scored " + score + " points";
-   }
 }
