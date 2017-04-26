@@ -24,9 +24,11 @@ GameObject:
   - component: {fileID: 95472222837332480}
   - component: {fileID: 54248324934848880}
   - component: {fileID: 65808102251552396}
+  - component: {fileID: 114903726937596846}
+  - component: {fileID: 114628907094992170}
   m_Layer: 0
   m_Name: Lettuce
-  m_TagString: Lettuce
+  m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,6 +76,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33227137834158248
 MeshFilter:
@@ -126,3 +129,26 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114628907094992170
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391001955290274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed6f6f442a255c4eb625f70df3572b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114903726937596846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391001955290274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4208cbe031f0440bcd31da78f26121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kind: 3

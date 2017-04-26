@@ -24,9 +24,11 @@ GameObject:
   - component: {fileID: 95134220810729538}
   - component: {fileID: 54226656925188696}
   - component: {fileID: 65000825483902568}
+  - component: {fileID: 114538436676258078}
+  - component: {fileID: 114892269698520396}
   m_Layer: 0
   m_Name: Cheese
-  m_TagString: Cheese
+  m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,6 +76,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33148029969652906
 MeshFilter:
@@ -126,3 +129,26 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114538436676258078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1626820551689656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4208cbe031f0440bcd31da78f26121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kind: 5
+--- !u!114 &114892269698520396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1626820551689656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed6f6f442a255c4eb625f70df3572b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
