@@ -7,7 +7,7 @@ public class ScoreManager : UnitySingleton<ScoreManager> {
     public GameObject TimeLoseGameobject;
 
     [Tooltip("The starting time in seconds for the game timer.")]
-    public int MAX_TIME_VALUE =  100;
+    public int MAX_TIME_VALUE =  300;
     [Tooltip("The time lost each time you drop something on the floor.")]
     public int TIME_LOST_AMOUNT = 5;
 
