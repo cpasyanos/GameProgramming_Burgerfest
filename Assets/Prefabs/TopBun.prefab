@@ -1344,6 +1344,7 @@ GameObject:
   - component: {fileID: 95414976003024720}
   - component: {fileID: 54357625596625888}
   - component: {fileID: 65894920062276014}
+  - component: {fileID: 114559801765095482}
   m_Layer: 0
   m_Name: TopBun
   m_TagString: TopBun
@@ -2853,3 +2854,14 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114559801765095482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932501760890570}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eee0874cd07ca146b1d1684532bd115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

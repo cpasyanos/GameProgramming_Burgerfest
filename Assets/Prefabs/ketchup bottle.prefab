@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 136980132588522610}
   - component: {fileID: 23486909689143096}
   - component: {fileID: 54560105897922878}
+  - component: {fileID: 114608322405539552}
   m_Layer: 0
   m_Name: ketchup bottle
   m_TagString: Untagged
@@ -299,6 +300,17 @@ MonoBehaviour:
   splatterCollider: {fileID: 136661304497144474}
   splatterParticles: {fileID: 198256250839505084}
   SplatType: 1
+--- !u!114 &114608322405539552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1231793892654070}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eee0874cd07ca146b1d1684532bd115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136628655374162188
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -819,6 +819,7 @@ GameObject:
   - component: {fileID: 95111960401016960}
   - component: {fileID: 54358541271225298}
   - component: {fileID: 65435147533050116}
+  - component: {fileID: 114098186146769626}
   m_Layer: 0
   m_Name: BottomBun
   m_TagString: BottomBun
@@ -1624,7 +1625,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1044960470421400}
-  m_LocalRotation: {x: 0.025032204, y: 0.670986, z: 0.7334069, w: 0.10613887}
+  m_LocalRotation: {x: 0.025032206, y: 0.67098606, z: 0.73340696, w: 0.10613888}
   m_LocalPosition: {x: 0.0041461843, y: 0.050000243, z: -0.00020826535}
   m_LocalScale: {x: 0.42190054, y: 0.30949515, z: 0.115253}
   m_Children:
@@ -2852,3 +2853,14 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114098186146769626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507034525414696}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eee0874cd07ca146b1d1684532bd115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
