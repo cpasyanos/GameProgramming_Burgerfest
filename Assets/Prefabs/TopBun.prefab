@@ -1344,9 +1344,11 @@ GameObject:
   - component: {fileID: 95414976003024720}
   - component: {fileID: 54357625596625888}
   - component: {fileID: 65894920062276014}
+  - component: {fileID: 114136259572670050}
+  - component: {fileID: 114348174905859912}
   m_Layer: 0
   m_Name: TopBun
-  m_TagString: TopBun
+  m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2801,6 +2803,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33999318466807420
 MeshFilter:
@@ -2853,3 +2856,26 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114136259572670050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932501760890570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4208cbe031f0440bcd31da78f26121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kind: 1
+--- !u!114 &114348174905859912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932501760890570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed6f6f442a255c4eb625f70df3572b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
