@@ -12,7 +12,9 @@ public class Pickupper : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Ingredient" || other.tag == "Plate")
+        if ((other.tag == "Ingredient"  && other.GetComponent<IngredientScript>().kind != Burger.fillings.MUSTARD && other.GetComponent<IngredientScript>().kind != Burger.fillings.KETCHUP) ||
+             other.tag == "Plate" ||
+             other.tag == "Splattable")
         {
             //Debug.Log(string.Format("Touched ingredient {0}", other.name));
             objectsToPickup.Add(other.gameObject);
@@ -21,7 +23,7 @@ public class Pickupper : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-            if (other.tag == "Ingredient" || other.tag == "Plate")
+            if (other.tag == "Ingredient" || other.tag == "Plate" || other.tag == "Splattable")
             {
                 //Debug.Log(string.Format("Stopped touching ingredient {0}", other.name));
                 objectsToPickup.Remove(other.gameObject);

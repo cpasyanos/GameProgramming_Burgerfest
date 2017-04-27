@@ -35,9 +35,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4092819380043376}
   - component: {fileID: 95344818355481590}
+  - component: {fileID: 54137614608074898}
+  - component: {fileID: 65883453974791816}
   m_Layer: 0
   m_Name: Spatula
-  m_TagString: Untagged
+  m_TagString: Splattable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -403,8 +405,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1049501950571658}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6886101, y: 3.22, z: 5.06}
+  m_LocalRotation: {x: 0, y: 0.9659259, z: -0, w: -0.25881898}
+  m_LocalPosition: {x: -2.67, y: 3.22, z: 2.51}
   m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children:
   - {fileID: 4040798941203906}
@@ -420,7 +422,7 @@ Transform:
   - {fileID: 4052534918813814}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 210, z: 0}
 --- !u!4 &4142758836062806
 Transform:
   m_ObjectHideFlags: 1
@@ -690,6 +692,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1541535958993358}
   m_Mesh: {fileID: 4300000, guid: 51435331f171c2d4a88dca8e39daefe9, type: 3}
+--- !u!54 &54137614608074898
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1049501950571658}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65883453974791816
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1049501950571658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.39, y: 0.03, z: 0.03}
+  m_Center: {x: -0.135, y: 0, z: 0}
 --- !u!95 &95344818355481590
 Animator:
   serializedVersion: 3
