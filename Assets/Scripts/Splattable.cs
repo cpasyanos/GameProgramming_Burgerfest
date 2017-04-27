@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Splattable : MonoBehaviour {
-    private const int MAX_SPLATS = 3;
 
-    public GameObject[] ketchupSplatObjects = new GameObject[MAX_SPLATS];
+    public GameObject[] ketchupSplatObjects;
     private int ketchupSplatCount;
 
-    public GameObject[] mustardSplatObjects = new GameObject[MAX_SPLATS];
+    public GameObject[] mustardSplatObjects;
     private int mustardSplatCount;
 
 
@@ -18,18 +17,20 @@ public class Splattable : MonoBehaviour {
         {
             case (Splatter.SplatterTypes.KETCHUP):
                 {
-                    if (ketchupSplatCount < MAX_SPLATS)
+                    if (ketchupSplatCount < ketchupSplatObjects.Length)
                     {
                         ketchupSplatObjects[ketchupSplatCount].SetActive(true);
+                        ketchupSplatObjects[ketchupSplatCount].GetComponent<MeshCollider>().enabled = true;
                         ketchupSplatCount++;
                     }
                     break;
                 }
             case (Splatter.SplatterTypes.MUSTARD):
                 {
-                    if (mustardSplatCount < MAX_SPLATS)
+                    if (mustardSplatCount < mustardSplatObjects.Length)
                     {
                         mustardSplatObjects[mustardSplatCount].SetActive(true);
+                        mustardSplatObjects[mustardSplatCount].GetComponent<MeshCollider>().enabled = true;
                         mustardSplatCount++;
                     }
                     break;

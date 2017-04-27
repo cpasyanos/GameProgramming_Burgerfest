@@ -24,7 +24,7 @@ public class OrderUpZone : MonoBehaviour {
         }
     }
 
-    private IEnumerator BadMessage()
+    public IEnumerator BadMessage()
     {
         text.gameObject.SetActive(true);
         text.text = "Nobody ordered THAT!";
@@ -32,7 +32,7 @@ public class OrderUpZone : MonoBehaviour {
         yield return new WaitForSeconds(2);
         text.gameObject.SetActive(false);
     }
-    private IEnumerator GoodMessage()
+    public IEnumerator GoodMessage()
     {
         text.gameObject.SetActive(true);
         text.text = "Order up!";

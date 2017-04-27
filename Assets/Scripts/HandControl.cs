@@ -23,6 +23,11 @@ public class HandControl : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+
         if (Input.GetAxis("Mouse X") != 0)
         {
             rigidbody.AddForce(new Vector3(Input.GetAxisRaw("Mouse Y") * Time.deltaTime * -1 * moveSpeed,
