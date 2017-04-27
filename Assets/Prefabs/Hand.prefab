@@ -275,7 +275,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4814429228652264}
   - component: {fileID: 33658603092324108}
-  - component: {fileID: 136677506760269424}
   - component: {fileID: 23795371510242918}
   m_Layer: 0
   m_Name: Sleeve
@@ -1181,7 +1180,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33658603092324108
 MeshFilter:
@@ -1262,6 +1260,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heldObject: {fileID: 0}
+  objectsToPickup: []
+  handTransform: {fileID: 0}
 --- !u!135 &135825648633981940
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -1273,19 +1273,6 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.83
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136677506760269424
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1533648979398506}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137427123094312910
 SkinnedMeshRenderer:
@@ -1300,7 +1287,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c14205e750fe114448478249ad6d49d5, type: 2}
+  - {fileID: 2100000, guid: 38db423da7d803545a9407ea428b8691, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1317,7 +1304,6 @@ SkinnedMeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
