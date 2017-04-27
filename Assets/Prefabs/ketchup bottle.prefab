@@ -43,10 +43,9 @@ GameObject:
   - component: {fileID: 136980132588522610}
   - component: {fileID: 23486909689143096}
   - component: {fileID: 54560105897922878}
-  - component: {fileID: 114342865601354716}
   m_Layer: 0
   m_Name: ketchup bottle
-  m_TagString: Ingredient
+  m_TagString: Splattable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,14 +106,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1231793892654070}
-  m_LocalRotation: {x: 0.78679997, y: -0.12431435, z: 0.41468635, w: -0.439917}
-  m_LocalPosition: {x: 0, y: 2.64, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.79, y: 3.75, z: -0.7000003}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
   - {fileID: 4343815500347564}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -169.52, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4328591560446468
 Transform:
   m_ObjectHideFlags: 1
@@ -286,18 +285,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114342865601354716
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1231793892654070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f4208cbe031f0440bcd31da78f26121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kind: 6
 --- !u!114 &114382678733202724
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -419,7 +406,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1670733517
+  randomSeed: 2044907548
   InitialModule:
     serializedVersion: 3
     enabled: 1

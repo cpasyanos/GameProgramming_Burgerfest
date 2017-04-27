@@ -18,14 +18,21 @@ public class Splatter : MonoBehaviour {
     {
         splatterCollider.enabled = active;
         splatterParticles.Play();
-
     }
 
 	public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Splattable")
+        if (other.tag == "Ingredient" && other.GetComponent<IngredientScript>().kind != Burger.fillings.MUSTARD && other.GetComponent<IngredientScript>().kind != Burger.fillings.KETCHUP)
         {
-            other.GetComponent<Splattable>().Splat(SplatType);
+            Splattable splattable = other.GetComponent<Splattable>();
+            if (splattable == null)
+            {
+                Debug.LogError(other.name);
+            }
+            else
+            {
+                splattable.Splat(SplatType);
+            }
         }
     }
 }
