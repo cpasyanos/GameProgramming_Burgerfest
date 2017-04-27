@@ -61,11 +61,7 @@ public class PauseMenu : MonoBehaviour
 	// Start game over from beginning by reloading game scene
 	public void Restart()
 	{
-		gameObject.SetActive (false);
-		Time.timeScale = 1;
-		isShown = false;
-		isPaused = false;
-		SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 
 	// Quit game and return to start menu

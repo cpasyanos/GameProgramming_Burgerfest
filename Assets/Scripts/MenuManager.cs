@@ -14,7 +14,7 @@ public class MenuManager : MonoBehaviour
 	// Start or Replay game
 	public void ToGame()
 	{
-		SceneManager.LoadScene ("newBurgerFestKitchen");
+		SceneManager.LoadScene ("final_demo");
 		//SceneManager.LoadScene ("BurgerFest Kitchen");
 	}
 
