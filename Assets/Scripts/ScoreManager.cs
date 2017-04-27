@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreManager : UnitySingleton<ScoreManager> {
+public class ScoreManager : UnitySingleton<ScoreManager>
+{
     public GameObject TimeLoseGameobject;
     public GameObject gameOverScreen;
 
     [Tooltip("The starting time in seconds for the game timer.")]
-    public int MAX_TIME_VALUE =  300;
+    public int MAX_TIME_VALUE = 300;
     [Tooltip("The time lost each time you drop something on the floor.")]
     public int TIME_LOST_AMOUNT = 5;
 
@@ -57,9 +58,10 @@ public class ScoreManager : UnitySingleton<ScoreManager> {
     }
     private void GameOver()
     {
-      //lol idk
-      displayScore();
-      gameOverScreen.SetActive(true);
+        //lol idk
+        displayScore();
+        Cursor.lockState = CursorLockMode.None;
+        gameOverScreen.SetActive(true);
     }
 
     private void Reset()
@@ -69,14 +71,15 @@ public class ScoreManager : UnitySingleton<ScoreManager> {
         Timer = MAX_TIME_VALUE;
     }
 
-	void Start () {
+    void Start()
+    {
         Reset();
         StartCoroutine(TimerCoroutine());
-	}
+    }
 
     private IEnumerator TimerCoroutine()
     {
-        while(Timer > 0)
+        while (Timer > 0)
         {
             Timer--;
             yield return new WaitForSeconds(1);
@@ -96,8 +99,8 @@ public class ScoreManager : UnitySingleton<ScoreManager> {
         Score += pointsToGain;
     }
 
-   public void displayScore()
-   {
-      finalText.text = "Your final score was " + score.ToString();
-   }
+    public void displayScore()
+    {
+        finalText.text = "Your final score was " + score.ToString();
+    }
 }
