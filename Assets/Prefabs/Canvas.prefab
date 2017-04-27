@@ -1785,7 +1785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeLoseGameobject: {fileID: 1649324988172162}
   gameOverScreen: {fileID: 1296609571489252}
-  MAX_TIME_VALUE: 100
+  MAX_TIME_VALUE: 300
   TIME_LOST_AMOUNT: 5
   timerText: {fileID: 114006246519572248}
   scoreText: {fileID: 114040028165659956}

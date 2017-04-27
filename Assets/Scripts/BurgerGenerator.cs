@@ -119,7 +119,7 @@ public class BurgerGenerator : UnitySingleton<BurgerGenerator>
         while(true)
         {
             GenerateNewOrder();
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(20);
         }
     }
 }
