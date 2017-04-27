@@ -15,6 +15,7 @@ TagManager:
   - TopBun
   - BottomBun
   - Patty
+  - Control
   layers:
   - Default
   - TransparentFX
